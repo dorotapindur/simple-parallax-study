@@ -1,39 +1,59 @@
-@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  padding: none;
+}
 .wrapper {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-    background: pink;
-  }
-  .section { 
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 0 0 5px #000;
-  }
-  .parallax::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-  }
-  .static {
-    background: red;
-  }
-  .bg1::after {
-    background-image: url('https://picsum.photos/900/700');
-  }
-  
-  .bg2::after {
-    background-image: url('https://picsum.photos/800/600');
-  }
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  background: #eeeeee;
+}
+.main-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: #cccccc;
+  margin: none;
+}
+.static-section { 
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  height: auto;
+  padding: 50px 10px;
+  background: #cccccc;
+}
+.parallax {
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+.bg1::after {
+  background-image: url('https://picsum.photos/900/700');
+}
+
+.bg2::after {
+  background-image: url('https://picsum.photos/800/600');
+}
