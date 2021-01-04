@@ -17,7 +17,7 @@
     text-shadow: 0 0 5px #000;
   }
   .parallax::after {
-    content: " ";
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -26,4 +26,14 @@
     transform: translateZ(-1px) scale(1.5);
     background-size: 100%;
     z-index: -1;
+  }
+  .static {
+    background: red;
+  }
+  .bg1::after {
+    background-image: url('https://picsum.photos/900/700');
+  }
+  
+  .bg2::after {
+    background-image: url('https://picsum.photos/800/600');
   }
