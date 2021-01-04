@@ -5,21 +5,24 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  padding: none;
+  padding: 0;
 }
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
-  background: #eeeeee;
+  background:pink;
+  padding: 0;
 }
 .main-header {
+  height: 80px;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
   background: #cccccc;
-  margin: none;
+  margin: 0;
+  padding: 20px;
 }
 .static-section { 
   color: black;
@@ -31,12 +34,14 @@ body {
 }
 .parallax {
   position: relative;
-  height: 500px;
+  height: 70vw;
+  max-height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-shadow: 0 0 5px #000;
+  margin: 0;
 }
 .parallax::after {
   content: "";
@@ -45,10 +50,11 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translateZ(-1px) scale(1.5);
+  transform: translateZ(-1px) scale(1.8);
   background-size: 100%;
   z-index: -1;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 .bg1::after {
   background-image: url('https://picsum.photos/900/700');
@@ -56,4 +62,16 @@ body {
 
 .bg2::after {
   background-image: url('https://picsum.photos/800/600');
+}
+footer {
+  color: black;
+  font-size: .6rem;
+  font-weight: 400;
+  height: 150px;
+  padding: 20px;
+  background: #cccccc;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
 }
