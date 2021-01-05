@@ -6,81 +6,11 @@ html {
 }
 body {
   padding: 0;
+  margin: 0;
 }
 main {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.wrapper {
-  height: calc(100vh - 150px);
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
-  background: #cccccc;
-  padding: 0;
-}
-.main-header {
-  height: 80px;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  background: #cccccc;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.static-section { 
-  color: black;
-  font-size: 1rem;
-  font-weight: 400;
   height: auto;
-  padding: 50px 10px;
-  background: #cccccc;
-}
-.parallax {
-  position: relative;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
-  margin: 0;
-}
-.parallax::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.8);
-  background-size: 100%;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-.bg1::after {
-  background-image: url('https://picsum.photos/900/600');
+  padding: 0;
+  Margin: 0;
 }
 
-.bg2::after {
-  background-image: url('https://picsum.photos/900/600');
-}
-footer {
-  color: black;
-  font-size: .6rem;
-  font-weight: 400;
-  height: 70px;
-  box-sizing: border-box;
-  padding: 10px;
-  background: #cccccc;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
-}
-
-/*still some media queries to add*/
