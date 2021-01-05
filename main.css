@@ -7,8 +7,13 @@ html {
 body {
   padding: 0;
 }
-.wrapper {
+main {
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.wrapper {
+  height: calc(100vh - 150px);
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
@@ -36,8 +41,7 @@ body {
 }
 .parallax {
   position: relative;
-  height: 70vw;
-  max-height: 800px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,21 +63,24 @@ body {
   background-position: top center;
 }
 .bg1::after {
-  background-image: url('https://picsum.photos/900/700');
+  background-image: url('https://picsum.photos/900/600');
 }
 
 .bg2::after {
-  background-image: url('https://picsum.photos/800/600');
+  background-image: url('https://picsum.photos/900/600');
 }
 footer {
   color: black;
   font-size: .6rem;
   font-weight: 400;
-  height: 150px;
-  padding: 20px;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 10px;
   background: #cccccc;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   text-align: center;
 }
+
+/*still some media queries to add*/
