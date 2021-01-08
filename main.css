@@ -26,16 +26,24 @@ main {
   padding: 1rem 1rem 1rem 51%;
   background-position: 0 50%;/*horizontal-axis vertical-axis*/
 }
-.illustration_01 {
-  background-color: #00c17b;
-  background-image: url("https://picsum.photos/500/700");
-}
 .left {
   padding: 1rem 51% 1rem 1rem;
   background-position: 100% 50%;
 }
+.illustration_01 {
+  background-color: #00c17b;
+  background-image: url("https://picsum.photos/500/700");
+}
 .illustration_02 {
   background-color: #e8697b;
+  background-image: url("https://picsum.photos/500/700");
+}
+.illustration_03 {
+  background-color: #14b29a;
+  background-image: url("https://picsum.photos/500/700");
+}
+.illustration_04 {
+  background-color: #80b9f1;
   background-image: url("https://picsum.photos/500/700");
 }
 .separator {
