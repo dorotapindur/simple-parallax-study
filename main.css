@@ -18,20 +18,20 @@ main {
 .content {
   font-size: 1.5rem;
   color: #262626;
-  background-size: 49% auto;
+  background-size: 50% auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .right {
-  padding: 1rem 1.2rem 1rem 50%;
-  background-position: 0 50%;
+  padding: 1rem 1rem 1rem 51%;
+  background-position: 0 50%;/*horizontal-axis vertical-axis*/
 }
 .illustration_01 {
   background-color: #00c17b;
   background-image: url("https://picsum.photos/500/700");
 }
 .left {
-  padding: 1rem 50% 1rem 1.2rem;
+  padding: 1rem 51% 1rem 1rem;
   background-position: 100% 50%;
 }
 .illustration_02 {
