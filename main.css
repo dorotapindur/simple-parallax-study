@@ -23,7 +23,7 @@ main {
   background-repeat: no-repeat;
 }
 .right {
-  padding: 1.618em 6.472em 3.236em 50%;
+  padding: 1rem 1.2rem 1rem 50%;
   background-position: 0 50%;
 }
 .illustration_01 {
@@ -31,7 +31,7 @@ main {
   background-image: url("https://picsum.photos/500/700");
 }
 .left {
-  padding: 1.618em 50% 3.236em 6.472em;
+  padding: 1rem 50% 1rem 1.2rem;
   background-position: 100% 50%;
 }
 .illustration_02 {
